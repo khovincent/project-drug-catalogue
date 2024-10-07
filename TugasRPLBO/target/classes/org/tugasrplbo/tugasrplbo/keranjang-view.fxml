@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.tugasrplbo.tugasrplbo.Controller.KeranjangController">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="600.0" spacing="10.0">
+            <children>
+                <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Keranjang Pembelian" />
+                <TableView fx:id="tableView" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="kodeObatColumn" prefWidth="69.5999755859375" text="Kode Obat" />
+                        <TableColumn fx:id="namaObatColumn" prefWidth="90.4000244140625" text="Nama Obat" />
+                        <TableColumn fx:id="kategoriColumn" text="Kategori" />
+                        <TableColumn fx:id="merekObatColumn" prefWidth="70.39996337890625" text="Merek" />
+                        <TableColumn fx:id="hargaColumn" prefWidth="72.00006103515625" text="Harga" />
+                        <TableColumn fx:id="deskripsiColumn" prefWidth="154.39996337890625" text="Deskripsi" />
+                        <TableColumn fx:id="jumlahColumn" prefWidth="65.60009765625" text="Jumlah" />
+                    </columns>
+                </TableView>
+                <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                    <Button fx:id="hapusButton" text="Hapus" onAction="#handleHapusButton"/>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

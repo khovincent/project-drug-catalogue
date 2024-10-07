@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="349.0" prefWidth="407.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.tugasrplbo.tugasrplbo.Controller.TambahObatController">
+    <children>
+        <Label layoutX="51.0" layoutY="87.0" text="Nama Obat:" />
+        <Label layoutX="52.0" layoutY="118.0" text="Kategori:" />
+        <Label layoutX="51.0" layoutY="183.0" text="Deskripsi:" />
+        <Label layoutX="53.0" layoutY="235.0" text="Merek" />
+        <TextField fx:id="namaobt" layoutX="164.0" layoutY="83.0" prefHeight="25.0" prefWidth="200.0" />
+        <TextArea fx:id="deskripsi" layoutX="164.0" layoutY="156.0" prefHeight="71.0" prefWidth="200.0" />
+        <Button fx:id="tambahobt" layoutX="306.0" layoutY="301.0" mnemonicParsing="false" onAction="#tambahObatClick" text="Tambah" />
+        <Label layoutX="167.0" layoutY="28.0" text="Tambah Obat" />
+        <ChoiceBox fx:id="kategori" layoutX="165.0" layoutY="114.0" prefHeight="25.0" prefWidth="200.0">
+
+        </ChoiceBox>
+        <TextField fx:id="merekobt" layoutX="165.0" layoutY="231.0" prefHeight="25.0" prefWidth="200.0" />
+        <TextField fx:id="hargaobt" layoutX="165.0" layoutY="264.0" prefHeight="25.0" prefWidth="200.0" />
+        <Label layoutX="53.0" layoutY="268.0" text="Harga" />
+    </children>
+</AnchorPane>

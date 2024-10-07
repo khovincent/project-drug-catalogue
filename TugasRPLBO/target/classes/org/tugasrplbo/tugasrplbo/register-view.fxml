@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.tugasrplbo.tugasrplbo.Controller.RegisterController">
+    <children>
+        <Label layoutX="130.0" layoutY="20.0" text="Register New User">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="50.0" layoutY="70.0" text="Username:" />
+        <Label layoutX="50.0" layoutY="110.0" text="Password:" />
+        <Label layoutX="50.0" layoutY="150.0" text="Confirm Password:" />
+        <TextField fx:id="txtNewUsername" layoutX="200.0" layoutY="66.0" promptText="Username" />
+        <PasswordField fx:id="txtNewPassword" layoutX="200.0" layoutY="106.0" promptText="Password" />
+        <PasswordField fx:id="txtConfirmPassword" layoutX="200.0" layoutY="146.0" promptText="Confirm Password" />
+        <Button layoutX="200.0" layoutY="190.0" mnemonicParsing="false" text="Register" onAction="#btnRegisterClick"/>
+    </children>
+</AnchorPane>

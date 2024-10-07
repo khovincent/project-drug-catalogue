@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="377.0" prefWidth="314.0" spacing="20" style="-fx-background-color: #E8EAF6;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.tugasrplbo.tugasrplbo.Controller.ProfileController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <!-- User Logo and Name -->
+    <VBox alignment="CENTER" spacing="10">
+        <ImageView fx:id="userLogo" fitHeight="80" fitWidth="80" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/User.png" />
+         </image></ImageView>
+        <Label fx:id="userName" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Erick" />
+    </VBox>
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="User Profile" />
+   <Button fx:id="userhomeButton" mnemonicParsing="false" onAction="#handleUserhome" text="User Home" />
+   <Button fx:id="keranjangviewButton" mnemonicParsing="false" onAction="#handleKeranjangView" text="Keranjang View" />
+   <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#handleLogOut" text="LogOut" />
+</VBox>

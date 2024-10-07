@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="349.0" prefWidth="407.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.tugasrplbo.tugasrplbo.Controller.BeliObatController">
+    <children>
+        <Label layoutX="51.0" layoutY="87.0" text="Nama Obat:" />
+        <Label layoutX="52.0" layoutY="118.0" text="Jumlah:" />
+        <TextField fx:id="jumlahobt" layoutX="165.0" layoutY="114.0" prefHeight="25.0" prefWidth="200.0" />
+        <Button fx:id="beliobt" layoutX="304.0" layoutY="303.0" mnemonicParsing="false" text="Beli" />
+        <Label layoutX="179.0" layoutY="31.0" text="Beli Obat" />
+        <ChoiceBox fx:id="tipeobt" layoutX="165.0" layoutY="83.0" prefHeight="25.0" prefWidth="200.0" />
+    </children>
+</AnchorPane>
