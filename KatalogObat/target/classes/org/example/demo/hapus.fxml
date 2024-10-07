@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:controller="org.example.demo.HapusController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tableview" layoutX="15.0" layoutY="22.0" prefHeight="392.0" prefWidth="866.0">
+        <columns>
+          <TableColumn fx:id="kod" prefWidth="101.19999694824219" text="Kode" />
+          <TableColumn fx:id="nam" prefWidth="136.5999984741211" text="Nama" />
+            <TableColumn fx:id="kat" prefWidth="178.20001220703125" text="Kategori" />
+            <TableColumn fx:id="des" prefWidth="343.4000549316406" text="Deskripsi" />
+            <TableColumn fx:id="exp" prefWidth="108.0" text="Expired" />
+        </columns>
+      </TableView>
+      <Button fx:id="hap" layoutX="535.0" layoutY="425.0" mnemonicParsing="false" onAction="#btnHapus" onDragDetected="#onBtnHapus" text="Hapus" />
+   </children>
+   <effect>
+      <ColorAdjust hue="-0.02" />
+   </effect>
+</Pane>

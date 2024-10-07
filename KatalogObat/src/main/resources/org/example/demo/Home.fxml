@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="999.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.HomeController">
+   <children>
+      <Pane prefHeight="74.0" prefWidth="999.0" style="-fx-background-color: #efefefef;">
+
+      <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="704.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Search.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="74.0" fitWidth="73.0" layoutX="77.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/CARIOBAT.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="731.0" layoutY="25.0" prefHeight="25.0" prefWidth="254.0" promptText="Search Item" />
+            <ImageView fitHeight="424.0" fitWidth="424.0" layoutX="280.0" layoutY="-185.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/logo text.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <BorderPane layoutY="73.0" prefHeight="526.0" prefWidth="999.0">
+         <left>
+            <VBox prefHeight="599.0" prefWidth="223.0" style="-fx-background-color: #efefefef;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="16.0" prefWidth="213.0" text="Filter Search">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="226.0" text="Show All Items">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/Brief.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label text="Product Name">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField prefHeight="25.0" prefWidth="254.0" promptText="Search Item">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Product Type">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField prefHeight="25.0" prefWidth="254.0" promptText="Product Type">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Brand">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField prefHeight="25.0" prefWidth="254.0" promptText="Brand">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Price">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="RP">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="3.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField prefHeight="25.0" prefWidth="254.0" promptText="Minimum Price">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Rp">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="3.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField prefHeight="25.0" prefWidth="254.0" promptText="Maximum Price">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Sort By">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ComboBox prefWidth="150.0" promptText="A-Z">
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: #016599;" text="Seach By Filter" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox prefHeight="31.0" prefWidth="999.0" style="-fx-background-color: #efefefef;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button alignment="BASELINE_LEFT" layoutY="40.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="226.0" text="Favourite">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/Star.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="tambahobatbtn" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#tambahObat" prefHeight="25.0" prefWidth="226.0" text="Tambah Obat">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/Add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="226.0" text="Perbarui Obat">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/Hand With Pen.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="hapusbtn" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="226.0" text="Hapus Obat">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/Delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleProfileButtonClick" prefHeight="25.0" prefWidth="226.0" text="Profile">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/User.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="0 items found">
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="5.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TableView prefHeight="459.0" prefWidth="776.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="Kode Obat" />
+                      <TableColumn prefWidth="113.0" text="Nama Obat" />
+                        <TableColumn prefWidth="77.0" text="Kategori" />
+                        <TableColumn prefWidth="129.0" text="Tanggal Kadaluarsa" />
+                        <TableColumn prefWidth="381.0" text="Deskripsi" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
